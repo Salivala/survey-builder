@@ -16,11 +16,7 @@ export class SignUpFormComponent implements OnInit {
 
   checkExists($events) {
     const name = $events.target.value;
-    if (this.names.indexOf(name) > -1) {
-      this.nameExists = true;
-    } else {
-      this.nameExists = false;
-    }
+    this.nameExists = this.names.indexOf(name) > -1;
   }
 
 }
