@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sign-up-form.component.scss']
 })
 export class SignUpFormComponent implements OnInit {
-  names: Array = ['hayden', 'bill'];
+  names: Array<string> = ['hayden', 'bill'];
   nameExists = false;
 
   constructor() { }
