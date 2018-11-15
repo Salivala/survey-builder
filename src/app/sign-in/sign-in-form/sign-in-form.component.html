@@ -3,7 +3,7 @@
         <div class="h2 text-center" id="title" >SIGN IN</div>
         <div class="form-group">
           <input type="text" class="form-control" id="username" placeholder="Enter username" maxlength="17" (input)="checkValid($event)">
-          <small id="warning" *ngIf="!validName; else placeholder" class="text-danger">{{ usernameFormatMessage}}</small>
+          <small id="warning" *ngIf="!validName; else placeholder" class="text-danger">{{ usernameFormatMessage }}</small>
           <ng-template #placeholder><br/></ng-template>
         </div>
       <div class="form-group">

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DbInfoService} from '../db-info.service';
 
 @Component({
   selector: 'app-landing',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  usernames = null;
+  constructor(private dbinfo: DbInfoService) {
+    this.usernames = dbinfo.getUsernames();
+  }
 
   ngOnInit() {
   }

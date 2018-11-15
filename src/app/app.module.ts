@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { SignInFormComponent } from './sign-in/sign-in-form/sign-in-form.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { SignUpFormComponent } from './sign-up/sign-up-form/sign-up-form.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,11 +19,12 @@ import { SignUpFormComponent } from './sign-up/sign-up-form/sign-up-form.compone
     HomeComponent,
     SignInFormComponent,
     SignUpComponent,
-    SignUpFormComponent
+    SignUpFormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
