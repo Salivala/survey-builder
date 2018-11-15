@@ -5,10 +5,10 @@ import {HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class DbInfoService {
-  http: HttpClient = null;
+  private http: HttpClient = null;
 
-  constructor(private http: HttpClient) {
-    this.http = http;
+  constructor(private tmphttp: HttpClient) {
+    this.http = tmphttp;
   }
 
   getUsernames() {
